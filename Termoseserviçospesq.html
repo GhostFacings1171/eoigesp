@@ -93,6 +93,26 @@
     <p><span style="color: rgb(68, 68, 68);">Estes termos e condições são regidos e interpretados de acordo com as leis do Estufa e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</span></p>
     
     </main>
+    <script>
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    if (userAgent.indexOf('chrome') > -1) {
+      // Ações específicas para o Chrome
+      document.body.style.backgroundColor = '';
+    } else if (userAgent.indexOf('firefox') > -1) {
+      // Ações específicas para o Firefox
+      document.body.style.backgroundColor = '';
+    } else if (userAgent.indexOf('safari') > -1) {
+      // Ações específicas para o Safari
+      document.body.style.backgroundColor = '';
+    } else if (userAgent.indexOf('opera') > -1 || userAgent.indexOf('opr') > -1) {
+      // Ações específicas para o Opera
+      document.body.style.backgroundColor = '';
+    } else {
+      // Ações para outros navegadores
+      document.body.style.backgroundColor = 'white';
+    }
+  </script>
     <footer>
         <p>&copy; 2023 Empresa ABC. Todos os direitos reservados.</p>
         <a href="index.html" style="position: fixed; top: 20px; left: 20px; background-color: #333; color: #fff; padding: 10px; text-decoration: none;">Voltar</a>
