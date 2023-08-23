@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sobre nós</title>
+</head>
+<style>
+    /* Reset de estilos para garantir consistência entre navegadores */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.lista {
+    list-style: none;
+    color: rgb(255, 0, 0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+header {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+.produto {
+    margin-bottom: 40px;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ #perfil {
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    right: 0;
+ }
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navega{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /*Cor de fundo*/
+    padding: 10px 0;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  footer p {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  footer li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  footer li:last-child {
+    margin-right: 0;
+  }
+
+
+
+
+  .Btn {
+  position: absolute;
+  top: 20px;
+  right:20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(76, 184, 82);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+
+
+
+/* Estilos adicionais podem ser adicionados conforme necessário */
+
+</style>
+<body>
+    <header>
+        <h1>Estufas EOIGESP</h1>
+    <div class="navega">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Nossas Estufas</a></li>
+                <li><a href="#criadores">Criadores</a></li>
+            </ul>
+        </nav>
+
+
+        <a id="buton" href="C:\Users\rgsch\OneDrive\Documentos\trabalhos\PESQ\login.html"> <button class="Btn">
+  
+            <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+            
+            <div class="text">Login</div>
+          </button>
+         </a> 
+          
+          
+    </div>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Estufas da Natureza é líder na fabricação e venda de estufas de alta qualidade, projetadas para proteger suas plantas e criar um ambiente ideal para o crescimento saudável. Nosso compromisso é fornecer soluções confiáveis e inovadoras para entusiastas de jardinagem e agricultores.</p>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossas Estufas</h2>
+        <div class="produto">
+            <img src="C:\Users\rgsch\OneDrive\Documentos\trabalhos\PESQ\estufaft.jpeg" alt="Estufa Modelo A">
+            <h3>Estufa Modelo A</h3>
+            <p>Ideal para jardins domésticos, a Estufa Modelo A oferece espaço generoso e ventilação ajustável. Proteja suas plantas o ano todo.</p>
+        </div>
+        <div class="produto">
+            <img src="C:\Users\rgsch\OneDrive\Documentos\trabalhos\PESQ\estufafti.jpeg" alt="Estufa Modelo B">
+            <h3>Estufa Modelo B</h3>
+            <p>A Estufa Modelo B é perfeita para agricultura em larga escala. Sua estrutura robusta e design funcional a tornam uma escolha inteligente.</p>
+        </div>
+
+        <div class="produto">
+            <img src="C:\Users\rgsch\OneDrive\Documentos\trabalhos\PESQ\estufa.jpeg" alt="Estufa Modelo B">
+            <h3>Estufa Modelo C</h3>
+            <p>A Estufa Modelo C é perfeita para agricultura em larga escala. Sua estrutura robusta e design funcional a tornam uma escolha inteligente.</p>
+        </div>
+        <!-- Adicione mais produtos aqui, se necessário -->
+    </section>
+
+    <section id="criadores">
+        <h2>Criadores</h2>
+        <p>A Estufas da Natureza foi fundada por <strong>3° ano</strong>, os responsaveis pela criação do produto foi o <strong>2° ano</strong> e os responsaveis pelo site, as redes sociais e o marketing foi: <strong>Clara Cardoso, Felipe Martini, Rafael Schumacher e Rebeka Galhardo</strong>. Combinando sua paixão pela natureza e habilidades em engenharia, eles criaram uma empresa focada em fornecer soluções de cultivo de alta qualidade.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Estufas da Natureza. Todos os direitos reservados.</p>
+        <div style="color:rgb(241, 236, 236);" class="lista"><ul>
+            <li style="color: rgb(241, 236, 236);"><a href="file:///C:/Users/rgsch/OneDrive/Documentos/trabalhos/PESQ/pesq%20contatos.html">Contato</a></li>
+            <li style="color: rgb(241, 236, 236);"><a href="file:///C:/Users/rgsch/OneDrive/Documentos/trabalhos/PESQ/Termos%20e%20serviços%20pesq.html">Termos de Serviço</a></li>
+            <li style="color: rgb(241, 236, 236);"><a href="file:///C:/Users/rgsch/OneDrive/Documentos/trabalhos/PESQ/Termos%20e%20serviços%20pesq.html">Política de Privacidade</a></li>
+          </ul>
+        </div>
+    </footer>
+</body>
+</html>
