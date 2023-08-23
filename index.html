@@ -259,7 +259,26 @@ p{
         <h2>Criadores</h2>
         <p>A Estufas da Natureza foi fundada por <strong>3° ano</strong>, os responsaveis pela criação do produto foi o <strong>2° ano</strong> e os responsaveis pelo site, as redes sociais e o marketing foi: <strong>Clara Cardoso, Felipe Martini, Rafael Schumacher e Rebeka Galhardo</strong>. Combinando sua paixão pela natureza e habilidades em engenharia, eles criaram uma empresa focada em fornecer soluções de cultivo de alta qualidade.</p>
     </section>
+<script>
+    var userAgent = navigator.userAgent.toLowerCase();
 
+    if (userAgent.indexOf('chrome') > -1) {
+      // Ações específicas para o Chrome
+      document.body.style.backgroundColor = '';
+    } else if (userAgent.indexOf('firefox') > -1) {
+      // Ações específicas para o Firefox
+      document.body.style.backgroundColor = '';
+    } else if (userAgent.indexOf('safari') > -1) {
+      // Ações específicas para o Safari
+      document.body.style.backgroundColor = '';
+    } else if (userAgent.indexOf('opera') > -1 || userAgent.indexOf('opr') > -1) {
+      // Ações específicas para o Opera
+      document.body.style.backgroundColor = '';
+    } else {
+      // Ações para outros navegadores
+      document.body.style.backgroundColor = 'white';
+    }
+  </script>
     <footer>
         <p>&copy; 2023 Estufas da Natureza. Todos os direitos reservados.</p>
         <div style="color:rgb(241, 236, 236);" class="lista"><ul>
