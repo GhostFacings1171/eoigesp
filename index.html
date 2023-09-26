@@ -253,7 +253,17 @@ p{
   transform: translate(2px ,2px);
 }
 
-
+video{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o vídeo fique centralizado na tela inteira */
+}
+#vidio{
+    text-align: center;
+}
 
 
 /* Estilos adicionais podem ser adicionados conforme necessário */
@@ -340,8 +350,8 @@ p{
         <!-- Adicione mais produtos aqui, se necessário -->
     </section>
         <hr>
-        <h2>Vídeo sobre a EÓIGESP</h2>
-            <video width="320" height="240" controls>
+         <h2 id="Nos">Vídeo sobre a EÓIGESP</h2>
+            <video width="467" height="350" controls>
               <source src="EOI-video.mp4" type="video/mp4">
             </video>
         <hr>
